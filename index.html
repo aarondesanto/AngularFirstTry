@@ -10,12 +10,21 @@
 </head>
 <body ng-app>
 
-  <div ng-init="band = [
-  { name: 'Megan James', role: 'Vocals' },
-  { name: 'Corin Roddick', role: 'Instrumentals' }
-  ]">
-    <div ng-repeat="member in band">{{member.name}} does {{member.role}}!</div>
+  <div class="wrapper">
+    <div ng-init="band = [
+      { name: 'Megan James', role: 'Vocals' },
+      { name: 'Corin Roddick', role: 'Instrumentals' }
+    ]">
+      <div ng-repeat="member in band" class="mem">{{member.name}} does {{member.role}}</div>
+    </div>
+    <div ng-init="discography = [
+      { name: 'Shrines', year: 2012, songs: ['Crawlersout', 'Fineshrines', 'Ungirthed', 'Ameanamy', 'Grandloves', 'Cartographist', 'Belispeak', 'Saltkin', 'Obedear', 'Lofticries', 'Shuck', ] },
+      { name: 'another eternity', year: 2015, songs: ['heartsigh', 'bodyache', 'push pull', 'repetition', 'stranger than earth', 'begin again', 'dust hymn', 'flood on the floor', 'sea castle', 'stillness in woe', '&nbsp;'] }
+    ]">
+      <div ng-repeat="album in discography" class="albumdiv"><span class="albumname">{{album.name}}</span> <span class="releaseyear">released: {{album.year}}</span> <div ng-repeat="song in album.songs" class="songsdiv">{{song}}</div></div>
+    </div>
   </div>
+
 
 </body>
 </html>

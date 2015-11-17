@@ -1,13 +1,35 @@
-.words {
-  display: inline-block;
-  width: 20%;
-  margin: 0 auto;
+html {
+  font-family: sans-serif;
+  color: #FFF;
 }
-.mad-lib {
-  position: absolute;
-  left: 30%;
-  top: 10%;
+.wrapper {
+  margin: 10px auto;
+  width: 16%;
+  padding: 3%;
+  background-color: #999;
+}
+.mem {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 1%;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.songsdiv {
+  margin: 3px 6px;
+  width: 136px;
+  border: 1px solid transparent;
+  text-align: left;
+}
+.albumdiv {
   display: inline-block;
-  width: 50%;
-  margin: 0 auto;
+  margin-top: 40px;
+}
+.albumname {
+  color: #66523E;
+}
+.releaseyear {
+  display:block;
+  width: 150px;
+  color: #EBA;
 }
