@@ -1,0 +1,13 @@
+.words {
+  display: inline-block;
+  width: 20%;
+  margin: 0 auto;
+}
+.mad-lib {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+}
